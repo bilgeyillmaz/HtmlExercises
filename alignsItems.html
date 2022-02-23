@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* display flex, justify-content ve align-items kullanılarak yapılan hizalamalar
+        dış kutunun, iç kutuların nasıl dizileceğine karar vermesidir.
+        position absolute özelliği ise, kutunun kendi kendisinin nerede hizalanacağını belirlemesidir.
+        opaklığın değer aralığı 0-1'dir.
+        Login Sayfası Notları:
+        position absolute dış alanda bulunan relative özelliği taşıyan kutuya göre hizalanacağım 
+        bir icon kütühanesi kullanılıyorsa font gibi düşünülür, buna göre büyüklük/küçüklük atanır
+        input-focus(odaklanma/seçilme durumunda)7
+        border radius: (yukarısı, sağ, aşağı, sol taraf)
+        position absolute: ben kendi kafama göre hizalanacağım.
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
+                    from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1)));---> doğrusal bir şekilde başlangıç noktası kutunun içeriğinde
+                    bir yer. sol üstten başla, sol alta doğru in. başlangıçta 0 görünmez ol, sonda 1 görünür ol.
+                    text- transform: uppercase - texti büyük harfe dönüştür.
+                    red green blue opacity: rgba
+                    
+        */
+        .content{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 50%;
+            height: 35vh;
+            background-color: #d1d2d3;
+        }
+    </style>
+   <div class="content">
+       <div class="box"></div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlienLogin</title>
+    <script type="text/javascript" language="javascript">
+        function alert1()
+        {
+              alert("User accepted.");      
+        }
+  </script>
+    <link rel="icon" href="alien.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-image: url(gradient-color-i106408.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100vh;
+        }
+        
+        .content{
+            width: 50%;
+            height: 35vh;
+            /* display: flex; */
+            left: 50%;
+            top: 50%;
+            /* justify-content: center;
+            align-items: center; */
+            position: absolute;
+            transform: translateX(-50%) translateY(-50%);
+            border-radius: 20px;
+            background-color: rgba(70, 11, 85, 0.5) 
+
+        }
+        .main {
+            margin: 80px 50px 10px;
+        }
+        .icon-box{
+            background:palevioletred;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 0%;
+            transform: translateY(-50%) translateX(-50%);
+        }
+        .icon-box>i{
+            color: white;
+            font-size: 70px;
+            margin: 33px 32px;
+        }
+        input{
+            height: 30px;
+            border: none;
+            
+            width: calc(100% - 33px);
+            
+            color: coral;
+            padding-left: 33px;
+            border-radius: 10px;
+            
+        }
+        input:focus{
+            border: 0px;
+            outline: none;
+        }
+        .form-group{
+            position: relative;
+        }
+        .form-group>i{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: palevioletred;
+            color: white;
+            left: 0;
+            top: 0;
+            line-height: 31px;
+            text-align: center;
+            border-radius: 10px 0px 0px 10px;
+        }
+        button{
+            width: 80%;
+            height: 30px;
+            border: none;
+            position: absolute;
+            top: calc(100% + 2px);
+            background-color: rgb(70,11, 85);
+            -webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
+                    from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
+            border-radius: 0px 0px 50px 50px;
+            left: 10%;
+            text-transform: lowercase;
+            font-weight: bolder;
+            color: white;
+        }
+
+
+
+    </style>
+    <!--  /* display flex, justify-content ve align-items kullanılarak yapılan hizalamalar
+        dış kutunun, iç kutuların nasıl dizileceğine karar vermesidir.
+        position absolute özelliği ise, kutunun kendi kendisinin nerede hizalanacağını belirlemesidir.
+        opaklığın değer aralığı 0-1'dir.
+        Login Sayfası Notları:
+        position absolute dış alanda bulunan relative özelliği taşıyan kutuya göre hizalanacağım 
+        bir icon kütühanesi kullanılıyorsa font gibi düşünülür, buna göre büyüklük/küçüklük atanır
+        input-focus(odaklanma/seçilme durumunda)7
+        border radius: (yukarısı, sağ, aşağı, sol taraf)
+        position absolute: ben kendi kafama göre hizalanacağım.
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
+                    from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 1))); doğrusal bir şekilde başlangıç noktası kutunun içeriğinde
+                    bir yer. sol üstten başla, sol alta doğru in. başlangıçta 0 görünmez ol, sonda 1 görünür ol.
+                    text- transform: uppercase - texti büyük harfe dönüştür.
+                    red green blue opacity: rgba
+                    
+         -->
+</head>
+<body>
+    <div class="content">
+        <div class="main">
+            <div class="icon-box">
+                <i class="fa-solid fa-face-smile"></i>
+            </div>
+            <div class="form-group">
+                <input type="text"placeholder="Username">
+                <i class="fa-regular fa-face-smile"></i>
+            </div>
+            <div class="form-group" style="margin-top:20px">
+                <input type="text"placeholder="Username">
+                <i class="fa-solid fa-key"></i>
+            </div>
+        </div>
+        <button class="btn-login" onclick="alert1()">Login</button>
+    </div>
+
+</body>
+</html>

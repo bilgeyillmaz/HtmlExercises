@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --box-width: 50px;
+           --box-height: 50px;
+           --box-background-color: red;   
+           
+        }
+        .boxGreen{ 
+            height: var(--box-width);
+            width: var(--box-width);
+            margin-top: 10px;
+            background-color: var(--box-background-color);
+
+        }
+        .boxGreen:hover{
+            background-color: green;
+        }
+        .boxBlue{ 
+            height: var(--box-width);
+            width: var(--box-width);
+            margin-top: 10px;
+            background-color: var(--box-background-color);
+
+
+        }
+        .boxBlue:hover{
+            background-color: blue;
+        }
+        .boxPurple{ 
+            height: var(--box-width);
+            width: var(--box-width);
+            margin-top: 10px;
+            background-color: var(--box-background-color);
+
+
+        }
+        .boxPurple:hover{
+            background-color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxGreen"></div>
+    <div class="boxBlue"></div>
+    <div class="boxPurple"></div>
+
+</body>
+</html>
